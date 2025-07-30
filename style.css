@@ -1,0 +1,197 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  
+ 
+}
+/* Background Image */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/dev background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Push it behind all other content */
+  border-radius: 15px;
+  padding: 20px;
+  margin: auto;
+
+}
+/*flexbox*/
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    /*max-width: 1200px;*/
+    margin: 5px; 
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-content: center;
+}
+ .containers{
+    padding: 20px 15px;
+    list-style: none;
+    border-radius: 10px;
+    border: 2px solid #f7f4f4;
+    box-shadow: 10px 20px 30px rgb(75, 1, 248);
+    margin-bottom: 20px;
+    text-align: center;
+    width: calc(100% /5 - 20px);
+}
+
+/* Header */
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #0e0468;
+  padding: 5px 10px;
+  border-radius: 10px;
+  align-content: center;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+h2 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+li{
+    color: #f5f2f2;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.project {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #007acc;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 15px;
+  color: #777;
+}
+p{
+    color: #f5f4f2;
+    font-size: 1.2rem;
+    padding-top: 10px 10px;
+    font-weight: 700;
+}
+.project{
+    background-color:rgb(8, 8, 196);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1380da;
+    border-radius: 10px;
+    box-shadow: 5px 10px 115px rgb(245, 244, 244);
+}
+h3{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#education a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #0820f1;
+    margin: 20px 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+}
+.typing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.typing img{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+}
+h1{
+    width: 50ch;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    animation: typing 7s steps(50),blink 7s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2rem;  
+}
+@keyframes typing {
+  from {
+     width: 0;
+     }
+}
+@keyframes blink {
+  50% {
+     border-color: transparent; 
+  }
+
+}
+
+
