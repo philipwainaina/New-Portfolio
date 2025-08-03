@@ -1,96 +1,73 @@
-📁 Philip's Portfolio Website
-Welcome to Philip Wainaina's personal portfolio website! This project showcases my background, skills, interests, and selected web development projects in an interactive, responsive, and stylish format.
+💼 Philip Wainaina's Portfolio Website
+Welcome to my personal portfolio website built using HTML, CSS, and Font Awesome. This project showcases my skills, educational background, interests, and completed projects in web development and data analysis.
 
-🧑‍💻 Overview
-This is a simple yet elegant personal portfolio website built using HTML5, CSS3, and Font Awesome icons. It is fully responsive and includes modern UI features like flexbox layouts, animations, hover effects, and a responsive hamburger menu for mobile views.
+📌 Live Demo
+🔗 Visit My Portfolio : https://philipwainaina.github.io/New-Portfolio/
 
-📂 Project Structure
+🧑‍💻 Features
+Responsive and modern design
+
+Interactive navigation with hamburger menu for mobile view
+
+Typing animation introduction
+
+Educational background and certifications section
+
+Interests in Web Development, AI, Data Science
+
+Highlighted projects with links
+
+Contact form with social media links
+
+🛠️ Tech Stack
+Frontend: HTML5, CSS3
+
+Icons & Styling: Font Awesome 6.7.1
+
+Animation: Keyframe animations
+
+Version Control: Git & GitHub
+
+🎓 Education & Certifications
+Diploma in Computer Science – Kiambu National Polytechnic
+
+Full Stack Development – Power Learn Project
+
+Web Development – Mentors Without Borders
+
+Data Science & AI – KIEP & SKIES
+
+Cisco Certified Support Technician (CCST)
+
+📂 Folder Structure
 bash
 Copy
 Edit
-philip-portfolio/
-│
-├── index.html           # Main HTML file
-├── style.css            # Custom stylesheet
-├── assets/              # Folder containing images (backgrounds, logo, gifs)
-│   ├── dev background.jpg
-│   ├── logo.jpg
-│   └── Ghost.gif
-🚀 Features
-📱 Responsive Design: Adapts to mobile, tablet, and desktop screens.
+/
+├── index.html              # Main HTML file
+├── style.css               # Main CSS file
+└── assets/                 # Folder for images and GIFs
+    ├── dev background.jpg
+    ├── IMG-20250422.jpg
+    └── Ghost.gif
+🖼️ Screenshots
+Feel free to insert screenshots of the website to showcase responsiveness and UI here.
 
-🎨 Modern Styling: Stylish layout with hover effects and shadows.
+📨 Contact
+You can reach out via:
 
-📂 Sectioned Layout:
+📧 Email: philipwainaina95@gmail.com
 
-About
+☎️ Phone: +254720353488
 
-Education (CV download included)
+🌍 Location: Nairobi, Kenya
 
-Interests
+💬 WhatsApp
 
-Projects
+🧵 Slack
 
-Contact Form
+🔗 Social Links
+GitHub | Twitter (X) | Instagram | LinkedIn
 
-🔗 Social Media Integration with Font Awesome icons
-
-🎞️ Typing animation in the header
-
-🌌 Custom Background and personalized graphics
-
-🛠️ Technologies Used
-HTML5 – Structure of the website
-
-CSS3 – Styling and layout
-
-Font Awesome – Social media and iconography
-
-Google Fonts – Typography
-
-Responsive Web Design – Flexbox and media queries
-
-🔗 Live Preview
-Click here to explore the portfolio live:
-👉 Philip's Portfolio
-
-📸 Screenshots
-(Optional – you can include screenshots here to showcase each section visually)
-
-📝 How to Use
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://philipwainaina.github.io/New-Portfolio/
-Open the project folder:
-
-bash
-Copy
-Edit
-cd portfoliio
-Open index.html in your browser or use a local development server:
-
-bash
-Copy
-Edit
-open index.html
-💡 Ensure you maintain the assets folder structure as referenced in the code.
-
-⚠️ Known Issues
-Some external links might require internet connectivity (e.g., Font Awesome CDN, CV link).
-
-Contact form currently doesn't submit data (needs backend integration or form service like Formspree).
-
-📬 Contact
-For feedback or collaboration:
-
-Email: philipwainaina84@gmail.com
-
-Twitter: @wainich20
-
-LinkedIn: Philip Wainaina
-
-📄 License
-This project is open for personal use. Feel free to fork and modify it to build your own portfolio. Attribution is appreciated but not required.
+📃 License
+This project is open for viewing and sharing. If you wish to reuse or build on it, please credit the author.
