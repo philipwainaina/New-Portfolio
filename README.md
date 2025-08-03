@@ -63,7 +63,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone (https://github.com/philipwainaina/New-Portfolio.git)
+git clone https://philipwainaina.github.io/New-Portfolio/
 Open the project folder:
 
 bash
