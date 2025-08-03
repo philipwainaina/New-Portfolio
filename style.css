@@ -86,6 +86,47 @@ nav a:hover {
   background-color: #3dc5ee;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
 }
+/* Hamburger menu styles */
+.nav-toggle {
+  display: none; /* Hidden by default */
+}
+
+.nav-toggle-label {
+  display: none; /* Hidden on larger screens */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 3px;
+  width: 100%;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  top: -10px;
+}
+
+.nav-toggle-label span::after {
+  top: 10px;
+}
 
 /* Sections */
 section {
@@ -271,25 +312,103 @@ h3{
 .gif{
 padding-top: 20px;
 }
+.gif a{
+  text-decoration: none;
+  padding-top: 10px;
+}
+.gif a p:hover{
+  color:orange;
+  box-shadow: 0px 5px 10px blue;
+  border-radius: 5px;
+}
+/* Hamburger menu styles */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none; 
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 3px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  top: -10px;
+}
+
+.nav-toggle-label span::after {
+  top: 10px;
+}
+
+/* Hamburger animation */
+.nav-toggle:checked + .nav-toggle-label span {
+  background: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 /* Reposive website*/
 @media (max-width: 768px) {
   .containers {
     width: calc(100% - 20px);
     margin: 30px 10px;
   }
+  .nav-toggle-label {
+    display: flex;
+  }
+   /* Show menu when checkbox is checked */
+  .nav-toggle:checked ~ ul {
+    right: 0; /* Slide in to visible position */
+  }
   nav{
-    
+    padding-bottom: -200px;
+    margin-bottom: -200px;
   }
+  
   nav ul {
+    display: block; /* Always rendered for animation */
+    position: relative;
+    top: 0;
+    right: 150%; /* Start off-screen to the right */
+    height: 50vh; /* Full height */
+    width: 200px; /* Fixed width for the menu */
+    background-color:transparent;
     flex-direction: column;
-    align-items: start;
-    padding-bottom: 10px;
-    gap: 10px;
-  }
-  nav a {
-
-
-    
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px; /* Space for hamburger icon */
+    transition: right 1s ease-in-out; /* Smooth slide */
   }
   .gif img {
     width: 100%;
@@ -329,5 +448,25 @@ padding-top: 20px;
   .social li a i {
     font-size: 1.5rem;
   }
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 2px;
+    font-size: 0.9rem;
+  }
+  
+.project a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.project a:hover{
+  color: rgb(3, 247, 56);
+  box-shadow:0px 5px 10px #3dc5ee;
+  border-radius: 5px;
 }
 
